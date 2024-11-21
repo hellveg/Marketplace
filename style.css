@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Muller";
+    font-family: "Muller", sans-serif;
     src: url(./fonts/MullerRegular.woff) format("woff");
 }
 
@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
 
+}
+
+body {
+    font-family: "Muller", sans-serif;
 }
 
 h1, h3 {
@@ -19,8 +23,24 @@ li {
     list-style-type: none;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 130px 90px;
+}
+
 .header {
-    margin: 159px 89px 0px 90px;
+    padding-bottom: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 130px;
 }
 
 .block-allocation {
@@ -42,12 +62,10 @@ li {
 }
 
 .science-title {
-    font-family: "Muller", sans-serif;
     color: #222222;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
-
 }
 
 .science-list {
@@ -74,28 +92,25 @@ li {
 }
 
 .science {
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #222222;
-
 }
 
 .cards {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     width: 100%;
 }
 
 .welcome-block {
     background-color: #1946BAD9;
-    height: 287px;
-    margin-bottom: 35px;
+    padding-bottom: 30px;
 }
 
 .title {
-    font-family: 'Muller', sans-serif;
     font-weight: 800;
     font-size: 36px;
     line-height: 36px;
@@ -104,7 +119,6 @@ li {
 }
 
 .subtitle {
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -112,13 +126,13 @@ li {
     padding: 15px 30px 0;
     opacity: 0.5;
 }
+
 .flex-blocks {
     display: flex;
     width: 100%;
 }
 
 .number-subtitle {
-    font-family: 'Muller', sans-serif;
     font-weight: 900;
     font-size: 34px;
     line-height: 34px;
@@ -128,7 +142,6 @@ li {
 }
 
 .text-subtitle {
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 9px;
     line-height: 9px;
@@ -139,20 +152,17 @@ li {
 
 .catalogs {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     width: 100%;
 }
 
 .collective-access {
     background-color: #38C463;
-    height: 289px;
-    max-width: 502px;
     width: 100%;
     box-shadow: 0 10px 20px #0000001A;
 }
 
 .title-second {
-    font-family: 'Muller', sans-serif;
     font-weight: 800;
     font-size: 32px;
     line-height: 32px;
@@ -165,7 +175,6 @@ li {
 
     width: 105px;
     height: 40px;
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -178,20 +187,8 @@ li {
 
 .remote-access {
     background-color: #F21F5B;
-    height: 289px;
-    max-width: 502px;
     width: 100%;
     box-shadow: 0 10px 20px #0000001A;
-
-}
-
-
-.section {
-    margin: 159px 89px 0px 90px;
-}
-
-.exampels {
-    margin-top: 130px;
 }
 
 .exampels-cards {
@@ -200,20 +197,23 @@ li {
 }
 
 .exampels-houses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 38px 0px 38px 29px;
+    gap: 8px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 20px #0000001A;
-    width: 100%;
-    padding: 38px 0px 38px 29px;
 }
 
 .exampels-icon {
-    height: 63px;
     width: 52px;
+    height: 52px;
 }
 
 .exampels-text-first {
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -221,31 +221,36 @@ li {
 }
 
 .exampels-text-second {
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #C4C4C4;
 }
 
-.physics-title {
-    margin: 140px 0px 22px;
-    font-family: 'Muller', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #222222;
-}
-
 .physics {
     display: flex;
     flex-direction: column;
-    gap: 79px;
+    width: 100%;
+    gap: 20px;
+}
+
+.physics-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 20px #0000001A;
     width: 100%;
     padding: 29px 84px 50px 33px;
+}
+
+.physics-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222222;
 }
 
 .physics-subtitle {
@@ -258,14 +263,13 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1946BAD9;
+    background-color: #1946BA;
     border-radius: 8px;
-    height: 32px;
-    width: 89px;
+    padding: 10px 10px;
 }
 
 .physics-subtitle__optics-text-first {
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 18.5px;
@@ -274,7 +278,7 @@ li {
 
 .physics-subtitle__optics-text {
     height: 26px;
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 18.5px;
@@ -285,7 +289,6 @@ li {
 .binocular {
     display: flex;
     gap: 140px;
-
 }
 
 .binocular-cards {
@@ -293,15 +296,13 @@ li {
     flex-direction: column;
     gap: 11px;
     width: 100%;
-    padding: 33px 55px 0 0;
     position: relative;
-
 }
 
 .binocular-size {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -50px;
+    right: 20px;
     height: 128px;
     width: 169px;
 }
@@ -313,7 +314,7 @@ li {
 }
 
 .binocular-text-first {
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -321,7 +322,7 @@ li {
 }
 
 .binocular-text-second {
-    font-family: 'Muller', sans-serif;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -331,7 +332,6 @@ li {
 
 
 .footer-block {
-    margin-top: 199px;
     min-height: 400px;
     padding: 30px 90px;
     display: flex;
@@ -347,9 +347,7 @@ li {
 }
 
 
-
 .footer-title {
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 48px;
@@ -357,7 +355,6 @@ li {
 }
 
 .footer-subtitle {
-    font-family: 'Muller', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
